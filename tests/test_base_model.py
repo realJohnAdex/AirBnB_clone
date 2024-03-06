@@ -97,6 +97,26 @@ class TestBaseModel(unittest.TestCase):
         b_dict = b.to_dict()
         self.assertIsInstance(b_dict['updated_at'], str)
 
+    def test_str_method(self):
+        """
+        Test __str__ method returns string rep of BaseModel instance.
+        """
+        b = BaseModel()
+        b_str = str(b)
+        self.assertIsInstance(b_str, str)
+
+    def test_new_instance_from_dict(self):
+        """
+        Test creation of new instance from dictionary representation.
+        """
+        b = BaseModel()
+        b_dict = b.to_dict()
+        new_b = BaseModel(**b_dict)
+        self.assertIsInstance(new_b, BaseModel)
+        self.assertEqual(b.id, new_b.id)
+        self.assertEqual(b.created_at, new_b.created_at)
+        self.assertEqual(b.updated_at, new_b.updated_at)
+
 
 if __name__ == '__main__':
     unittest.main()
