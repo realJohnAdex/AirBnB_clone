@@ -3,3 +3,6 @@ __pycache__/
 
 # Ignore files starting with 'test_' in root directory
 /test_*
+
+#ignore .json files in root directory
+*.json
