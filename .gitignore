@@ -1,5 +1,5 @@
 # Ignore __pycache__ directories
 __pycache__/
 
-# Ignore files starting with 'test_' in any directory or subdirectory
-test_*
+# Ignore files starting with 'test_' in root directory
+/test_*
