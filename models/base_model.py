@@ -12,7 +12,8 @@ class BaseModel:
     """
     def __init__(self):
         """
-        Initializes BaseModel instance with unique id and creation/update timestamps.
+        Initializes BaseModel instance with unique id
+        and creation/update timestamps.
         """
         self.id = str(uuid.uuid4())
         self.created_at = datetime.now()
@@ -22,7 +23,8 @@ class BaseModel:
         """
         Returns string representation of BaseModel instance.
         """
-        return "[{}] ({}) {}".format(self.__class__.__name__, self.id, self.__dict__)
+        class_name = self.__class__.__name__
+        return "[{}] ({}) {}".format(class_name, self.id, self.__dict__)
 
     def save(self):
         """

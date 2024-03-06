@@ -50,7 +50,7 @@ class TestBaseModel(unittest.TestCase):
 
     def test_to_dict_returns_dict(self):
         """
-        Test to_dict method returns dictionary representation of BaseModel class.
+        Test to_dict method returns dict representation of BaseModel class.
         """
         b = BaseModel()
         b_dict = b.to_dict()
@@ -58,7 +58,7 @@ class TestBaseModel(unittest.TestCase):
 
     def test_to_dict_contains_class_name(self):
         """
-        Test to_dict method includes '__class__' key with class name in dictionary representation.
+        Test to_dict method has '__class__' key with class name in dict rep.
         """
         b = BaseModel()
         b_dict = b.to_dict()
@@ -67,7 +67,7 @@ class TestBaseModel(unittest.TestCase):
 
     def test_to_dict_contains_created_at(self):
         """
-        Test to_dict method includes 'created_at' key in dictionary representation.
+        Test to_dict method includes 'created_at' key in dict rep.
         """
         b = BaseModel()
         b_dict = b.to_dict()
@@ -75,7 +75,7 @@ class TestBaseModel(unittest.TestCase):
 
     def test_to_dict_contains_updated_at(self):
         """
-        Test to_dict method includes 'updated_at' key in dictionary representation.
+        Test to_dict method includes 'updated_at' key in dict rep.
         """
         b = BaseModel()
         b_dict = b.to_dict()
@@ -83,7 +83,7 @@ class TestBaseModel(unittest.TestCase):
 
     def test_to_dict_created_at_format(self):
         """
-        Test to_dict method returns 'created_at' attribute in proper ISO format.
+        Test to_dict method returns 'created_at' attr in proper ISO format.
         """
         b = BaseModel()
         b_dict = b.to_dict()
@@ -91,7 +91,7 @@ class TestBaseModel(unittest.TestCase):
 
     def test_to_dict_updated_at_format(self):
         """
-        Test to_dict method returns 'updated_at' attribute in proper ISO format.
+        Test to_dict method returns 'updated_at' attr in proper ISO format.
         """
         b = BaseModel()
         b_dict = b.to_dict()
