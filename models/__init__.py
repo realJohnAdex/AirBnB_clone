@@ -1,3 +1,8 @@
 #!/usr/bin/python3
-""" initializes the module models """
-from .base_model import BaseModel
+"""
+Initialization module for the models package.
+"""
+from models.engine.file_storage import FileStorage
+
+storage = FileStorage()
+storage.reload()
