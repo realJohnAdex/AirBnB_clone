@@ -4,9 +4,11 @@ Module containing FileStorage class.
 """
 import json
 from models.base_model import BaseModel
+from models.user import User
 
 CLASS_MAP = {
     'BaseModel': BaseModel,
+    'User': User,
     # Add other class names and their corresponding class objects here
 }
 
