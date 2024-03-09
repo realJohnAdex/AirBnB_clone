@@ -197,7 +197,9 @@ class HBNBCommand(cmd.Cmd):
                 new_arg = args[1].split('(')
                 new_arg1 = new_arg[1].split(')')
                 new_arg2 = new_arg1[0].split(', ')
-                self.do_update(args[0] + " " + new_arg2[0] + " " + new_arg2[1] + " " + new_arg2[2])
+                self.do_update(args[0] + " "
+                               + new_arg2[0] + " "
+                               + new_arg2[1] + " " + new_arg2[2])
             else:
                 print("*** Unknown syntax: {}".format(line))
         else:
