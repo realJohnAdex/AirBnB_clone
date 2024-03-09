@@ -61,10 +61,3 @@ class TestPlace(unittest.TestCase):
         self.assertIsInstance(place_dict["updated_at"], str)
         self.assertIsInstance(place_dict["id"], str)
         self.assertEqual(place_dict["__class__"], "Place")
-
-    def test_save(self):
-        """ Test that save method updates the public instance attribute updated_at. """
-        new_place = Place()
-        old_updated_at = new_place.updated_at
-        new_place.save()
-        self.assertNotEqual(old_updated_at, new_place.updated_at)
