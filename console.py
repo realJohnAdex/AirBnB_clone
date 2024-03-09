@@ -99,7 +99,7 @@ class HBNBCommand(cmd.Cmd):
         Prints the string representation of an instance
         based on the class name and id.
         """
-        args = line.split(' ')
+        args = line.split()
         if not line:
             print("** class name missing **")
         elif args[0] not in classes:
@@ -118,7 +118,7 @@ class HBNBCommand(cmd.Cmd):
         Deletes an instance based on the class name and id
         (save the change into the JSON file).
         """
-        args = line.split(' ')
+        args = line.split()
         if not line:
             print("** class name missing **")
         elif args[0] not in classes:
@@ -138,7 +138,7 @@ class HBNBCommand(cmd.Cmd):
         Prints all string representation of all instances
         based or not on the class name.
         """
-        args = line.split(' ')
+        args = line.split()
         if not line:
             print([str(value) for value in storage.all().values()])
         elif args[0] not in classes:
@@ -152,7 +152,7 @@ class HBNBCommand(cmd.Cmd):
         Updates an instance based on the class name and id
         by adding or updating attribute (save the change into the JSON file).
         """
-        args = line.split(' ')
+        args = line.split()
         if not line:
             print("** class name missing **")
         elif args[0] not in classes:
