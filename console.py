@@ -29,12 +29,6 @@ class HBNBCommand(cmd.Cmd):
     """
     prompt = "(hbnb) "
 
-    def __init__(self):
-        """
-        Constructor for HBNBCommand class
-        """
-        super().__init__()
-
     def do_quit(self, line):
         """
         Exit the program.
