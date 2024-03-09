@@ -22,8 +22,8 @@ class TestFileStorage(unittest.TestCase):
         """
         Clean up test environment.
         """
-        if os.path.exists("storage_file.json"):
-            os.remove("storage_file.json")
+        if os.path.exists("file.json"):
+            os.remove("file.json")
 
     def test_instance_creation(self):
         """
