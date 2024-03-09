@@ -8,6 +8,10 @@ from models.base_model import BaseModel
 from models import storage
 from models.user import User
 from models.state import State
+from models.city import City
+from models.amenity import Amenity
+from models.place import Place
+from models.review import Review
 
 
 class HBNBCommand(cmd.Cmd):
@@ -21,7 +25,8 @@ class HBNBCommand(cmd.Cmd):
         Constructor for HBNBCommand class
         """
         super().__init__()
-        self.classes = ["BaseModel", "User", "State"]
+        self.classes = ["BaseModel", "User", "State", "City",
+                        "Amenity", "Place", "Review"]
 
     def do_quit(self, arg):
         """
@@ -60,6 +65,22 @@ class HBNBCommand(cmd.Cmd):
             print(new_instance.id)
         elif arg == "State":
             new_instance = State()
+            new_instance.save()
+            print(new_instance.id)
+        elif arg == "City":
+            new_instance = City()
+            new_instance.save()
+            print(new_instance.id)
+        elif arg == "Amenity":
+            new_instance = Amenity()
+            new_instance.save()
+            print(new_instance.id)
+        elif arg == "Place":
+            new_instance = Place()
+            new_instance.save()
+            print(new_instance.id)
+        elif arg == "Review":
+            new_instance = Review()
             new_instance.save()
             print(new_instance.id)
         else:
