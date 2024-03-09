@@ -22,6 +22,7 @@ classes = ["BaseModel",
            "Place",
            "Review"]
 
+
 class HBNBCommand(cmd.Cmd):
     """
     Command intetrpreter class
