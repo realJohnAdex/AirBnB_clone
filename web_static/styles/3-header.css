@@ -4,4 +4,8 @@ header {
     height: 70px;
     width: 100%;
     border-bottom: 1px #CCCCCC;
+    display: flex;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: 20px 50%;
 }
