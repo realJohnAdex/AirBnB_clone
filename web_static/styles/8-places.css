@@ -68,7 +68,7 @@ article .headline {
 }
 
 .guest_icon{
-    background-image: url(../images/icon_group.png);
+    background-image: url(./images/icon_group.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 50px;
@@ -76,7 +76,7 @@ article .headline {
 }
 
 .room_icon{
-    background-image: url(../images/icon_bed.png);
+    background-image: url(./images/icon_bed.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 50px;
@@ -84,7 +84,7 @@ article .headline {
 }
 
 .bath_icon{
-    background-image: url(../images/icon_bath.png);
+    background-image: url(./images/icon_bath.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 50px;
